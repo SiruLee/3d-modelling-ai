@@ -1,16 +1,12 @@
-from py.scripts.components.component import Component
-from py.scripts.components.curve import Curve
-
-
-class Feature(Component):
-    def __init__(self, name):
-        super().__init__(name)
+from py.scripts.components.feature import Feature
+from py.scripts.components.curve.curve import Curve
 
 
 class BoxFeature(Feature):
     """
     The class that defines the feature of a Box object
     """
+
     def __init__(self, name: str, length: float, width: float, height: float):
         """
         :param name: The name of the object of this feature
@@ -28,6 +24,7 @@ class CylinderFeature(Feature):
     """
     The class that defines the feature of a Cylinder object
     """
+
     def __init__(self, name: str, diameter: float, height: float):
         """
         :param name: The name of the object of this feature
@@ -43,6 +40,7 @@ class SphereFeature(Feature):
     """
     The class that defines the feature of a Sphere object
     """
+
     def __init__(self, name: str, diameter: float):
         """
         :param name: The name of the object of this feature
@@ -72,7 +70,9 @@ class CoilFeature(Feature):
     """
     The class that defines the feature of a Coil object
     """
-    def __init__(self, name: str, diameter: float, revolutions: float, height: float, angle: float, section_size: float):
+
+    def __init__(self, name: str, diameter: float, revolutions: float, height: float, angle: float,
+                 section_size: float):
         """
         :param name: the name of the object of this feature
         :param diameter: the major diameter of the Coil object

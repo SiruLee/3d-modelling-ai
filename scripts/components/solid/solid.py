@@ -1,4 +1,5 @@
-from py.scripts.components.solid_features import *
+from py.scripts.components.component import Component
+from py.scripts.components.solid.solid_features import *
 
 
 class Solid(Component):
@@ -36,6 +37,7 @@ class Box(Solid):
         return self.feature.length, self.feature.width, self.feature.height
 
     def create(self, api):
+        # TODO
         pass
 
 
@@ -60,6 +62,7 @@ class Cylinder(Solid):
         return self.feature.diameter, self.feature.height
 
     def create(self, api):
+        # TODO
         pass
 
 
@@ -85,6 +88,7 @@ class Sphere(Solid):
         return self.feature.diameter
 
     def create(self, api):
+        # TODO
         pass
 
 
@@ -109,6 +113,7 @@ class Torus(Solid):
         return self.feature.major, self.feature.minor
 
     def create(self, api):
+        # TODO
         pass
 
 
@@ -134,6 +139,7 @@ class Coil(Solid):
                 self.feature.angle, self.feature.section_size)
 
     def create(self, api):
+        # TODO
         pass
 
 
@@ -158,4 +164,5 @@ class Pipe(Solid):
         return self.feature.diameter, self.feature.curve
 
     def create(self, api):
+        # TODO
         pass
