@@ -1,4 +1,4 @@
-from py.components.component import Component
+from py.scripts.components.component import Component
 
 
 class Curve(Component):

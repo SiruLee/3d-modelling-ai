@@ -1,24 +1,5 @@
 % Saved by Prover9-Mace4 Version 0.5, December 2007.
 
-set(ignore_option_dependencies). % GUI handles dependencies
-
-if(Prover9). % Options for Prover9
-  set(prolog_style_variables).
-  assign(max_seconds, 60).
-end_if.
-
-if(Mace4).   % Options for Mace4
-  assign(start_size, 5).
-  assign(max_models, 5).
-  assign(max_seconds, 600).
-  assign(max_seconds_per, 60).
-  set(prolog_style_variables).
-end_if.
-
-if(Prover9). % Additional input for Prover9
-assign(max_seconds, -1).
-end_if.
-
 if(Mace4).   % Additional input for Mace4
 % Additional input for Mace4
 % Additional input for Mace4

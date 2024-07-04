@@ -1,4 +1,4 @@
-from py.components.solid_features import *
+from py.scripts.components.solid_features import *
 
 
 class Solid(Component):

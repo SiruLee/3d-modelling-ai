@@ -1,5 +1,5 @@
-from py.components.component import Component
-from py.components.curve import Curve
+from py.scripts.components.component import Component
+from py.scripts.components.curve import Curve
 
 
 class Feature(Component):
