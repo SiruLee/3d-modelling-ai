@@ -6,6 +6,7 @@ class Solid(Component):
     """
     The class that defines solid objects
     """
+    has_hole = False
 
     def __init__(self, name: str, origin: tuple[float, float, float]):
         super().__init__(name)
@@ -30,7 +31,7 @@ class Box(Solid):
         assert name == feature.name, "The feature name should match the object name"
         self.feature = feature
 
-    def get_feature(self) -> tuple[float, float, float]:
+    def unpack_feature(self) -> tuple[float, float, float]:
         """
         :return: length, width, height of this Box object
         """
